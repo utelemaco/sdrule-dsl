@@ -12,7 +12,7 @@ As start point, the SDRule-DSL is a tool that enables formal representation of s
 
 Our approach for software development representation is composed by a metamodel and the DSL.
 
-METAMODEL FIGURE ENTERS HERE....
+![Software Development Metamodel](https://raw.githubusercontent.com/utelemaco/sdrule-dsl/master/SoftwareProjectModel.png)
 
 The DSL reasons over the concepts presented in the metamodel. A simple example is showed bellow:
 
