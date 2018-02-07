@@ -1,37 +1,28 @@
-## Welcome to GitHub Pages
+## Welcome to SDRule-DSL Web Site
 
-You can use the [editor on GitHub](https://github.com/utelemaco/sdrule-dsl/edit/master/README.md) to maintain and preview the content for your website in Markdown files.
+Thanks for your interest in SDRule-DSL.
 
-Whenever you commit to this repository, GitHub Pages will run [Jekyll](https://jekyllrb.com/) to rebuild the pages in your site, from the content in your Markdown files.
+Let me introduce the language and our research... The SDRUle-DSL is a small language to represent software development rules and the language is part of a comprehensive research that is pursuing the construction of a platform for **Compliance Checking and Monitoring of Software Projects**.
 
-### Markdown
+As experienced developers who have witnessed many approaches for software development process (since Waterfall, RUP, Scrum, XP and other agile methods) we know that developing a software is a very complex mission and any attempt to make rigid processes will not succeed. Instead, we believe that software projects should be flexible and developers must have autonomy to make their own decisions. However, we also believe that a non-intrusive platform to observe what is going on during the process and alert the team of potential non-conformities could be a good idea.
 
-Markdown is a lightweight and easy-to-use syntax for styling your writing. It includes conventions for
+As start point, the SDRule-DSL is tool that enables formal representation of software development rules. Our previous experience with general purpose languages for rule representation (such as OCL, JBoss Drools and SWRL) revealed that to be fully adopted by the industry a language must be, above all, simple. So, our aim is providing a simple, powerful and easy-to-learn DSL for rule representation (that is a tough challenge).
 
-```markdown
-Syntax highlighted code block
+Our approach for software development representation is composed by a metamodel and the DSL.
 
-# Header 1
-## Header 2
-### Header 3
+METAMODEL FIGURE ENTERS HERE....
 
-- Bulleted
-- List
+### Software Development Metamodel and Basic Syntax
 
-1. Numbered
-2. List
+The DSL reasons over the concepts presented in the metamodel. A simple example is showed bellow:
 
-**Bold** and _Italic_ and `Code` text
-
-[Link](url) and ![Image](src)
+```
+Id: MyFirstRule
+Name: A started Project should have at least one Iteration
+Description: A started project without an iteration doesn't make sense. May be someone forget to define an interation.
+Target: PROJECT
+When: $project.isStarted
+Then: $project.interations.size > 0
 ```
 
-For more details see [GitHub Flavored Markdown](https://guides.github.com/features/mastering-markdown/).
-
-### Jekyll Themes
-
-Your Pages site will use the layout and styles from the Jekyll theme you have selected in your [repository settings](https://github.com/utelemaco/sdrule-dsl/settings). The name of this theme is saved in the Jekyll `_config.yml` configuration file.
-
-### Support or Contact
-
-Having trouble with Pages? Check out our [documentation](https://help.github.com/categories/github-pages-basics/) or [contact support](https://github.com/contact) and we’ll help you sort it out.
+For more details see [SDRule-DSL Wiki](https://github.com/utelemaco/sdrule-dsl/wiki).
