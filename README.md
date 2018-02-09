@@ -12,7 +12,7 @@ As start point, the SDRule-DSL is a tool that enables formal representation of s
 
 Our approach for software development representation is composed by a metamodel and the DSL.
 
-![Software Development Metamodel](https://raw.githubusercontent.com/utelemaco/sdrule-dsl/master/SoftwareProjectModel.png)
+![Software Development Metamodel](https://raw.githubusercontent.com/utelemaco/sdrule-dsl/master/figures/SoftwareProjectModel.png)
 
 The DSL reasons over the concepts presented in the metamodel. A simple example is showed bellow:
 
@@ -25,4 +25,4 @@ When: $project.isStarted
 Then: $project.interations.size > 0
 ```
 
-For more details see [SDRule-DSL Wiki](https://github.com/utelemaco/sdrule-dsl/wiki).
+For more details see [SDRule-DSL Documentation](doc/index.md).
