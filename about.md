@@ -1,3 +1,5 @@
+## About SDRule-DSL
+
 Thank you for your interest in SDRule-DSL.
 
 Let me introduce the language and our research... The SDRUle-DSL is a small language to represent software development rules and the language is part of a comprehensive research that is pursuing the construction of a platform for **Compliance Checking and Monitoring in Software Projects**.
